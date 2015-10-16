@@ -2,13 +2,13 @@
 
 ## Story
 
-I don't like to wait, so I don't like my office building elevator, which seems always spend my time to wait for it comes up even it is in idle.
+I don't like to wait, so I don't like my office building elevator, which seems always spend my time to wait for comes up even it's in idle.
 
 However it aroused my interest to think about how to design a pleasure one.
 
 ## Target
 
-Elevator to make peoples wait shortest.
+Elevator to make peoples wait time shortest.
 
 ## Condition
 
@@ -30,8 +30,7 @@ Elevator to make peoples wait shortest.
 ---
 ## Algorithm 1
 
-Always move to the floor with max score.  
-score = (nth floor - 1) * number_of_people. Which means more people, higher score; higher floor, higher score.
+Always move to the floor with max score, score = (nth floor - 1) * number_of_people. Which means more people, higher score; higher floor, higher score.
 
 **Example**
 
@@ -69,8 +68,8 @@ score = (nth floor - 1) * number_of_people. Which means more people, higher scor
 
 **Issue:**
 
-	1) if much more people are not come to the building yet, lift should standby at 1th not nth.
-	2) didn't considered usage frequency and dispersiveness.
+1. if much more people are not come to the building yet, lift should standby at 1th not nth.
+2. didn't considered usage frequency and dispersiveness.
 
 ---
 ## Algorithm 2
@@ -86,15 +85,16 @@ The score of history records relate to the floor people went, higher floor, high
 
 **Issue:**
 
-	1) doesn't count on time. For example even a few of people are not coming yet but sooner(like in the morning), lift may standby at 1th as well regardless the people in the building.
+1. doesn't count on time. For example even a few of people are not coming yet but sooner (like in the morning), lift may standby at 1th as well regardless the people in the building.
 
 ---
 ## Algorithm 3 (TODO)
 
 Redesign score calculation, rank by:
 
-	Factor1: right now the most possibility of nth floor which people use lift.
-	Factor2: floor#. If 2 records from low to high, should boost the record with lower "from" a little bit. Vise versa.   
+Factor1: right now the most possibility of nth floor which people use lift.
+
+Factor2: floor#. If 2 records from low to high, should boost the record with lower "from" a little bit. Vise versa.   
 
 ---	
 ## Others TODO
