@@ -68,8 +68,8 @@ Always move to the floor with max score, score = (nth floor - 1) * number_of_peo
 
 **Issue:**
 
-1. if much more people are not come to the building yet, lift should standby at 1th not nth.
-2. didn't considered usage frequency and dispersiveness.
+1. If much more people are not come to the building yet, lift should standby at 1th not nth.
+2. Didn't considered usage frequency and dispersiveness.
 
 ---
 ## Algorithm 2
@@ -85,7 +85,7 @@ The score of history records relate to the floor people went, higher floor, high
 
 **Issue:**
 
-1. doesn't count on time. For example even a few of people are not coming yet but sooner (like in the morning), lift may standby at 1th as well regardless the people in the building.
+1. Doesn't count on time. For example even a few of people are not coming yet but sooner (like in the morning), lift may standby at 1th as well regardless the people in the building.
 
 ---
 ## Algorithm 3 (TODO)
