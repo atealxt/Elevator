@@ -102,3 +102,4 @@ Factor2: floor#. If 2 records from low to high, should boost the record with low
 * Prove less waiting can benefit less running and more saving? (A/B testing)  
 * Negative floor  
 * Multi elevator  
+* Bias and parameter: efficiency, wear (randome choose?), gravity
